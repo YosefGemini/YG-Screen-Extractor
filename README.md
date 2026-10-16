@@ -280,6 +280,13 @@ sudo pacman -S tesseract-data-eng tesseract-data-spa
 Quick mode queries the active monitor in KWin. Make sure the cursor is on the
 desired monitor when you trigger the capture.
 
+**The application does not start from the KDE menu or a global shortcut**
+The launcher and the `.desktop` file must have the shebang
+(`#!/usr/bin/env bash`) on the very first line. A leading blank line prevents
+Plasma from detecting it when the command is launched directly, so nothing
+opens. Reinstall with `./install.sh` to refresh
+`/usr/local/bin/yg-screen-extractor` and the desktop entry.
+
 ---
 
 ## Contributing

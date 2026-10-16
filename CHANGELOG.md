@@ -7,6 +7,20 @@ y este proyecto se adhiere al [Versionado Semántico](https://semver.org/lang/es
 
 ## [Sin publicar]
 
+## [0.1.1-alpha] - 2026-10-16
+
+Versión de corrección que resuelve el arranque de la herramienta desde el menú
+de aplicaciones de KDE y desde los atajos globales.
+
+### Corregido
+
+- Se eliminó la línea en blanco inicial de `install.sh`, de `uninstall.sh`, del
+  lanzador (`packaging/yg-screen-extractor-launcher.sh`) y del archivo
+  `.desktop` (`packaging/screen-extractor.desktop`). Esa línea impedía que el
+  intérprete detectara el *shebang* (`#!/usr/bin/env bash`), por lo que el
+  lanzador fallaba al ejecutarse directamente desde el menú de aplicaciones de
+  Plasma y desde los atajos de teclado configurados en Plasma.
+
 ## [0.1.0-alpha] - 2026-10-16
 
 Primer **MVP (Producto Mínimo Viable)** del proyecto. Versión **alpha**:
@@ -42,4 +56,5 @@ API y comportamiento todavía sujetos a cambios.
 - Requiere una sesión KDE Plasma con KWin sobre Wayland.
 
 [Sin publicar]: https://github.com/YosefGemini/YG-Screen-Extractor/commits/main
+[0.1.1-alpha]: https://github.com/YosefGemini/YG-Screen-Extractor/releases/tag/v0.1.1-alpha
 [0.1.0-alpha]: https://github.com/YosefGemini/YG-Screen-Extractor/releases/tag/v0.1.0-alpha

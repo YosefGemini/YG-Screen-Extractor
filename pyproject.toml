@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "yg-screen-extractor"
-version = "0.1.0-alpha"
+version = "0.1.1-alpha"
 description = "MVP alpha: extrae texto de una región de la pantalla mediante OCR en KDE Plasma (Wayland)."
 readme = "README.md"
 requires-python = ">=3.10"
