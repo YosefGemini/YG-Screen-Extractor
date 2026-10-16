@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yg-screen-extractor"
+version = "0.1.0-alpha"
+description = "MVP alpha: extrae texto de una región de la pantalla mediante OCR en KDE Plasma (Wayland)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-or-later" }
+authors = [
+    { name = "José Jiménez", email = "jose.jimenez04@epn.edu.ec" },
+]
+keywords = [
+    "ocr",
+    "tesseract",
+    "kde",
+    "plasma",
+    "kwin",
+    "wayland",
+    "screenshot",
+    "screen-capture",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Natural Language :: Spanish",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: C++",
+    "Topic :: Multimedia :: Graphics :: Capture :: Screen Capture",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "PySide6>=6.8,<7",
+    "Pillow>=11,<13",
+    "pytesseract>=0.3.13,<0.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/YosefGemini/YG-Screen-Extractor"
+Repository = "https://github.com/YosefGemini/YG-Screen-Extractor.git"
+Issues = "https://github.com/YosefGemini/YG-Screen-Extractor/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 79
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

@@ -1,0 +1,12 @@
+
+
+[Desktop Entry]
+Type=Application
+Name=YG Screen Extractor
+Comment=Extrae texto de una región de la pantalla mediante OCR
+Exec=/usr/local/bin/yg-screen-extractor
+TryExec=/usr/local/bin/yg-screen-extractor
+Icon=accessories-text-editor
+Terminal=false
+Categories=Utility;Accessibility;
+StartupNotify=true

@@ -1,0 +1,53 @@
+# Entornos virtuales de Python
+venv/
+.venv/
+env/
+ENV/
+
+# Caché y artefactos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+*.spec.bak
+
+# Herramientas de pruebas y cobertura
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Compilación del helper C++ (CMake)
+capture-helper/build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.o
+*.a
+*.so
+
+# Artefactos de PyInstaller
+dist/
+*.toc
+localpycs/
+xref-*.html
+warn-*.txt
+
+# Capturas y resultados generados por la aplicación
+capture.png
+ocr-result.txt
+ocr-structured.txt
+ocr-modes/
+
+# Metadatos de escritorios / editores
+.directory
+*.swp
+*.swo
+*~
+.idea/
+.vscode/

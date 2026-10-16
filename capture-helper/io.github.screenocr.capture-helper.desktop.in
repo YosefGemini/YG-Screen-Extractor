@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=YG Screen Extractor Capture Helper
+Comment=Helper nativo para las capturas de YG Screen Extractor
+Exec=@CMAKE_INSTALL_FULL_BINDIR@/yg-screen-extractor-capture-helper
+TryExec=@CMAKE_INSTALL_FULL_BINDIR@/yg-screen-extractor-capture-helper
+Path=@CMAKE_INSTALL_FULL_BINDIR@
+Terminal=false
+Categories=Utility;
+X-DBUS-StartupType=none
+X-KDE-DBUS-Restricted-Interfaces=org.kde.KWin.ScreenShot2
